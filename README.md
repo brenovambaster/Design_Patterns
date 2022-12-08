@@ -6,6 +6,7 @@ Sumário:
 
 - [Design Patterns](#design-patterns)
   - [1. Introdução](#1-introdução)
+  - [1.1 Classificação dos padrões de projeto.](#11-classificação-dos-padrões-de-projeto)
   - [2. Adapter ou Wrapper](#2-adapter-ou-wrapper)
     - [2.1 Intenção](#21-intenção)
     - [2.2 Estrutura](#22-estrutura)
@@ -30,6 +31,22 @@ Sumário:
  **Podem ser divididos em duas categorias:** finalidade(que se divide em de **criação, estrutural e comportamental** ) e escopo(**classe ou objeto**).
 
  Os padrões de criação se preocupam  com o processo de criação dos objetos. Os padrões estruturais lidam com a composição de classes ou de objetos Os comportamentos tem o foco em maneiras pelas quais classes e objetos interagem entre si e de suas possibilidades. Neste trabalho, vamos dar ênfase em dois padrões de  projetos, o  **Adapter(Estrutural) e o Strategy(Comportamental)**
+
+## 1.1 Classificação dos padrões de projeto.
+
+| De Criação      | Estrutural | Comportamental          |
+| --------------- | ---------- | ----------------------- |
+| Abstrac Factory | Adapter    | Chain of Responsibility |
+| Factory Method  | Bridge     | Command                 |
+| Builder         | Composite  | Iterator                |
+| Prototype       | Decorator  | Mediator                |
+| Singleton       | Façade     | Memento                 |
+| -               | Flyweight  | Observer                |
+| -               | Proxy      | State                   |
+| -               | -          | Strategy                |
+| -               | -          | Visitor                 |
+
+
 
 ## 2. Adapter ou Wrapper
 
@@ -66,6 +83,8 @@ ___
 ### 3.1 Intenção
 
 Definir a família de algoritmos, encapsular esses algoritmos e usá-los dependendo da situação. Isso permite que o algoritmo varie independentemente dos clientes que o  utilizam
+
+Geralmente utilizado em situações em que as classes tem métodos relativamente em comuns, mas que implementam de uma forma diferente.
 
 ### 3.2 Estrutura
 ![alt](imgs/strategy_diagram.png)
