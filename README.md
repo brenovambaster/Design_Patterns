@@ -1,7 +1,9 @@
 # Design Patterns
 
 > Autor: @brenovambaster
+
 > Vídeo: https://www.youtube.com/channel/UCfE3Vnak8A-vdRl6uc67BzQ
+
 > github: https://github.com/brenovambaster/Design_Patterns 
 
 Sumário:
