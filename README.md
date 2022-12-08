@@ -1,6 +1,8 @@
 # Design Patterns
 
 > Autor: @brenovambaster
+> Vídeo: https://www.youtube.com/channel/UCfE3Vnak8A-vdRl6uc67BzQ
+> github: https://github.com/brenovambaster/Design_Patterns 
 
 Sumário:
 
@@ -16,7 +18,6 @@ Sumário:
     - [3.1 Intenção](#31-intenção)
     - [3.2 Estrutura](#32-estrutura)
     - [3.3 Participantes](#33-participantes)
-    - [3.4 Exemplos que usaremos para demonstrar](#34-exemplos-que-usaremos-para-demonstrar)
 
 ## 1. Introdução
 
@@ -69,7 +70,7 @@ IMAGE REFERENCES
 - **Target**: Define a interface específica que o Client utiliza
 - **Client**: Colabora com os objetos compatíveis com a classe *Tagert*
 - **Adaptee**: Classe que queremos nos comunicar
-- **Adapta** a interface de Adaptee à interface Target para usarmos.
+- **Adapter** a interface de Adaptee à interface Target para usarmos.
 
 ### 2.4 Exemplos que usaremos para demonstrar
 
@@ -90,13 +91,11 @@ Geralmente utilizado em situações em que as classes tem métodos relativamente
 ![alt](imgs/strategy_diagram.png)
 ### 3.3 Participantes
 
-- **Strategy:** Define uma interface comum para todos os algoritmos suportados.
-- **ConcreteStrategy:** Implementa o algoritmo utilizando a interface de Strategy
-- Contex:
+- **Strategy:** Define uma interface comum para todos os algoritmos suportados. (calculaJuros)
+- **ConcreteStrategy:** Implementa o algoritmo utilizando a interface de Strategy (Banco)
+- Contex:(CalculadoraJuros)
   - é configurado com um objeto `ConcreteStrategy`
   - Mantém uma referência para um objeto Strategy
   - Pode definir uma interface que permite Strategy acesse seus dados
 
 [Link para o código fonte](https://#)
-
-### 3.4 Exemplos que usaremos para demonstrar
